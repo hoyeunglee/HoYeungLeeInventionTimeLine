@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vertical Timeline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #0078D4;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .timeline-item {
+      padding: 1rem 2rem;
+      position: relative;
+      width: 50%;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-content {
+      background-color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #0078D4;
+      border: 4px solid white;
+      z-index: 1;
+    }
+
+    .timeline-item.left::before {
+      right: 50px;
+    }
+
+    .timeline-item.right::before {
+      left: -10px;
+    }
+
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #0078D4;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 4rem;
+        padding-right: 2rem;
+      }
+
+      .timeline-item::before {
+        left: -30px;
+      }
+
+      .timeline::after {
+        left: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Excel automation of Equity Pricing Completed</h3>
+        <p>Variance Gamma Pricing Model is completed</p>
+        <small>June 2007</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>YouFina company setup</h3>
+        <p>ASP .net membership web is developed for browsing the VG equity pricing result for over 1000 equity</p>
+        <small>July 2007</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Core math technique is invented</h3>
+        <p>Ho Yeung - Lee, invented the core math for later development of prediction of equity turning point</p>
+        <small>June 2014</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Core math of Chain is invented</h3>
+        <p>Long term prediction of turning point by chain mathematics graph is invented by Ho Yeung - Lee</p>
+        <small>June 2015</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Math based on previous core math is invented</h3>
+        <p>Ho Yeung - Lee, invented the graph that can utilized the core math - it show the initial model of math that can use as foundation for later programming script</p>
+        <small>June 2015</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>A real turning point math method is developed</h3>
+        <p>Ho Yeung - Lee is invented and wrote several programming script to compute all possible math equations that can compute in limited 64 years which originally is completed in hundred light years. Initial three days computation have already found the core math equation and found a compatible math method that can utilize and draw the turning point prediction method</p>
+        <small>June 2019, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Mark SIX prediction method based on Base number is invented</h3>
+        <p>Ho Yeung - Lee invented a base method with date to predict mark six</p>
+        <small>October 2021, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Mark SIX prediction method 順流逆流 based on Base number is invented</h3>
+        <p>Ho Yeung - Lee invented a Mark six prediction method 順流逆流 based on Base number</p>
+        <small>November 2022, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Mark SIX prediction method based on Base number is invented</h3>
+        <p>Ho Yeung - Lee invented a base method with date to predict mark six</p>
+        <small>October 2021, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>HE man Mark six prediction method is invented</h3>
+        <p>Ho Yeung - Lee invented a Mark six prediction method by invented HE man hashtable</p>
+        <small>November 2021, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Hand movement recognition based on point is invented</h3>
+        <p>Ho Yeung - Lee invented a point based method and handcrafted code to recognize hand movement instead of machine learning and training and developed a 3D node effect graph like Alien convenant movie</p>
+        <small>October 2023, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Using Google hand gesture library, developed several hand gesture application similar with Marvel ironman movie and Oblivion and Mirrority report</h3>
+        <p>Ho Yeung - Lee developed Marvel movie like hand gesture application using Google hand gesture library</p>
+        <small>November 2024, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Several unnamed mark six prediction scripts are invented</h3>
+        <p>Ho Yeung - Lee invented several unnamed mark six prediction scripts are invented and the method can predict horse racing - 2 numbers have at least 1 number in top 3 places from 12 horses</p>
+        <small>October 2023 - 2024, exact but around this year</small>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Mark six prediction based on gambling is invented</h3>
+        <p>Ho Yeung - Lee invented another Mark six hashtable based on gambling</p>
+        <small>September 2025</small>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
